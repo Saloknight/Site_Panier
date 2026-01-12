@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+					LOGO
+			</div>
+			<a href="#" aria-controls="cart-container" class="cart">
+				<span class="icon-cart"></span>
+				<div class="nbItem">
+					0
+				</div>
+			</a>
+		</div>
+	</header>
+	<main>
+		<section id="cart-container" aria-expanded="false" class="cart">
+			<div class="title">
+				PANIER
+			</div>
+			<div class="cartContent" aria-live="polite"></div>
+			<div class="total">
+				<p>
+					TOTAL
+				</p>
+				<p>
+					<span class="cart_total">0</span>€
+				</p>
+			</div>
+			<div class="close_pay">
+				<a href="#" aria-controls="cart-container" class="close close_cart_content">
+					FERMER
+				</a>
+				<div class="pay">
+					PAYER
+				</div>
+			</div>
+		</section>
+
+
+		<section class="products">
+			<div class="container">
+				<div aria-live="polite" class="row productsContainer"></div>
+			</div>
+		</section>
+
+
+
+		<template id="articleTemplate">
+			<article class="col-3 col-md-4 col-sm-6 col-xs-12">
+						<figure>
+							<img src="" alt="">
+						</figure>
+						<h1></h1>
+						<p class="price"></p>
+						<a href="#" class="btn addToCart">
+							Ajouter au panier
+						</a>
+			</article>
+		</template>
+
+		<template id="item-cart">
+			<div class="item">
+					<div class="item_trash">
+						T
+					</div>
+					<div class="item_img">
+						<img src="" alt="">
+					</div>
+					<div class="item_title"></div>
+					<div class="item_price"></div>
+					<div class="item_qty">
+						<div tabindex="1" aria-label="retirer une quantitté" class="item_qty_button less">
+							-
+						</div>
+						<div class="item_qty_value">
+							1
+						</div>
+						<div tabindex="1" aria-label="ajouter une quantitté" class="item_qty_button add">
+							+
+						</div>
+					</div>
+				</div>
+		</template>
+		
+	</main>
+	<script async src="assets/js/main.js"></script>
+</body>
+</html>
